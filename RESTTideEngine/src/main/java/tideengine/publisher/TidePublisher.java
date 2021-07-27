@@ -113,7 +113,7 @@ public class TidePublisher {
 			cmd = String.format("mv %s.pdf web", radical);
 			p = Runtime.getRuntime().exec(cmd);
 			exitStatus = p.waitFor();
-			System.out.println("Command completed, status " + exitStatus);
+			System.out.printf("Command [%s] completed, status %s\n", cmd, exitStatus);
 
 			return "." + radical.substring(radical.lastIndexOf(File.separator)) + ".pdf";
 		} catch (Exception ex) {
