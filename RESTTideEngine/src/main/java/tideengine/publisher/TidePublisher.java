@@ -60,7 +60,7 @@ public class TidePublisher {
 			out = new PrintStream(new FileOutputStream(tempFile));
 			radical = tempFile.getAbsolutePath();
 			radical = radical.substring(0, radical.lastIndexOf(".xml"));
-//      System.out.println("Writing data in " + tempFile.getAbsolutePath());
+		    System.out.println("Writing data in " + tempFile.getAbsolutePath());
 		} catch (Exception ex) {
 			System.err.println("Error creating temp file");
 			ex.printStackTrace();
